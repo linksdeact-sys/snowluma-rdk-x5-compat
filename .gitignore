@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.so
+*.node
+*.dll
+*.db
+*.db-*
+*.log
+*.key
+*.pem
+.env
+.env.*

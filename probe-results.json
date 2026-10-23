@@ -1,0 +1,30 @@
+{
+  "without_compat": {
+    "architecture": "aarch64",
+    "kernel": "6.1.83",
+    "process_vm_readv_self": {
+      "bytes_read": -1,
+      "errno": 38,
+      "errno_name": "ENOSYS",
+      "test_data_matches": false
+    },
+    "proc_self_mem": {
+      "test_data_matches": true
+    },
+    "cross_memory_attach_config": "# CONFIG_CROSS_MEMORY_ATTACH is not set"
+  },
+  "with_compat": {
+    "architecture": "aarch64",
+    "kernel": "6.1.83",
+    "process_vm_readv_self": {
+      "bytes_read": 9,
+      "errno": null,
+      "errno_name": null,
+      "test_data_matches": true
+    },
+    "proc_self_mem": {
+      "test_data_matches": true
+    },
+    "cross_memory_attach_config": "# CONFIG_CROSS_MEMORY_ATTACH is not set"
+  }
+}
